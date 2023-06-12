@@ -1,0 +1,88 @@
+<?php 
+require 'functions.php';
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nunung Salon</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	
+	<!-- Atas -->
+	<div class="medsos">
+		<div class="container">
+			<ul>
+				<h4><a>ikuti kami di</a></h4>
+				<li><a href="https://www.instagram.com/nunungsalon/">
+					<img src="icon/ig.png" style="width: 17px; height: 17px"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC1kJm1NUx0x1E0dDhBtwfJA">
+					<img src="icon/yt.png" style="width: 18px; height: 18px"></a></li>
+				<li><a href="https://api.whatsapp.com/send?phone=+6285201385401">
+					<img src="icon/wa.png" style="width: 17px; height: 17px"></a></li>
+				<h5><a href="https://www.google.com/maps/dir//Nunung+Salon+dan+Busana,+Jl.+Raya+Dieng,+Dukuh+Karanganyar,+Pasurenan,+Batur,+Banjarnegara,+Jawa+Tengah+53456,+Indonesia/@-7.2166021,109.7845136,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2e700d0f488d7de5:0x2745db2094dca02b!2m2!1d109.8545542!2d-7.2166074?hl=id"><img src="icon/gps.png" style="width: 17px; height: 17px"> Alamat</a></h5>
+			</ul>
+		</div>
+	</div>
+
+	<!-- header -->
+	<div class="header">
+		<h1><a href="index.php"><img src="logo.png" style="width: 300px; height: 75px"></a></h1>
+			<ul>
+				<li class="active"><a href="index.php">Beranda</a></li>
+				<li><a href="index.php">Album</a></li>
+				<li><a href="index.php">Layanan</a></li>
+				<li><a href="index.php">Alur Pemesanan</a></li>
+				<li><a href="login.php">Logout</a></li>
+			</ul>
+	</div>
+
+	<!-- body -->
+		<div class="background"> 
+			<h1>Hallo <?= $_POST ["username"];?></h1>
+			<br>
+			<h3>Selamat Datang di</h3>
+			<h2>NUNUNG SALON</h2>
+			<h3>Kami adalah salah datu Salon Kecantikan yang menyediakan layanan jasa Rias Pengantin di daerah Batur, Banjarnegara, Jawa Tengah. Melayani Rias Pengantin dan Dekorasi serta sewa alat pesta untuk acara pernikahan. Kami juga melayani sewa busana untuk keperluan festival, karnaval dan acara lainnya. Kami siap melayani anda dengan segala kebutuhan yang anda inginkan, suatu kehormatan kami bisa membantu dan memberikan pengalaman yang lebih baik untuk anda. Terimakasih</h3>
+		</div>
+	<div class="youtube">
+		<center><h3>Nunung Salon TV Youtube Channel</h3></center>
+	    <div class="youtube-item">
+	    	<iframe width="560" height="315" src="https://www.youtube.com/embed/h8yNkvWxAdU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	 
+	    	<iframe width="560" height="315" src="https://www.youtube.com/embed/pOVv_JKrI8c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    </div>
+	</div>
+
+	</div>
+	    <div class="service">
+			<center><h2>Layanan Kami</h2></center>
+			<div class="service-item">
+				<a href="login.php"><img src="layanan/couple.png">
+				<p>Busana</p></a>
+			</div>
+			<div class="service-item">
+				<a href="login.php"><img src="layanan/cosmetics.png">
+				<p>Tata Rias</p></a>
+			</div>
+			<div class="service-item">
+				<a href="login.php"><img src="layanan/wedding.png">
+				<p>Dekorasi</p></a>
+			</div>
+			<div class="service-item">
+				<a href="login.php"><img src="layanan/photographer.png">
+				<p>Fotografer</p></a>
+			</div>
+			<marquee scollamount="">Website ini dibuat sebagai gallery Wedding Organizer, Segala bentuk pemesanan dan transaksi akan langsung dialihkan pada kontak pemilik Wedding Organizer, untuk kemudahan dalam negosiasi</marquee>
+		</div>
+
+	<!-- footer -->
+	<div class="footer">
+		 <p class="copy">COPYRIGHT © 2020 NUNUNG SALON - ALL RIGHTS RESERVED</p>
+	</div>
+
+</body>
+</html>
